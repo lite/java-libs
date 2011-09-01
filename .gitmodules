@@ -1,0 +1,3 @@
+[submodule "spring-mvc-showcase"]
+	path = spring-mvc-showcase
+	url = git://github.com/SpringSource/spring-mvc-showcase.git
