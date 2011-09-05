@@ -49,6 +49,8 @@
             <element id="library" level="project" name="Maven: joda-time:joda-time:1.6.2" />
             <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.18" />
             <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.8.5" />
+            <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-library:1.1" />
+            <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
             <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.1.0.Final" />
             <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
             <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.0.0" />
@@ -483,6 +485,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/web/jstl-impl/1.2/jstl-impl-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-core:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-library:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate:hibernate-validator:4.1.0.Final">

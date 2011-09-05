@@ -1,35 +1,42 @@
 package org.fssle.sample.service;
 
-import org.fssle.sample.mapper.ProductMapper;
-import org.fssle.sample.model.Product;
+import org.fssle.sample.mapper.ProductDAO;
+import org.fssle.sample.pojo.Product;
+import org.fssle.sample.presenter.ProductPresenter;
 import org.fssle.sample.presenter.ProductsPresenter;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ProductsService {
-    private Map<String, Product> products = new HashMap();
-    private ProductMapper productMapper;
-
-    public void setUserMapper(ProductMapper productMapper) {
-        this.productMapper = productMapper;
-    }
-
-    public ProductsService() {
-        addProduct("1", "Ruby");
-        addProduct("2", "Perl");
-        addProduct("3", "Python");
-    }
+    private ProductDAO productDAO = new ProductDAO();
 
     public ProductsPresenter createProductsPresenter() {
-        return new ProductsPresenter(products.values());
+        return new ProductsPresenter(productDAO.getProducts());
     }
 
-    private void addProduct(String id, String name) {
-        products.put(id, new Product(id, name));
+    public ProductPresenter createProductPresenter() {
+        return new ProductPresenter();
+    }
+
+    public ProductPresenter createProductPresenter(String productId) {
+        return new ProductPresenter(getProduct(productId));
+    }
+
+    public void deleteProduct(String productId) {
+        productDAO.deleteProduct(productId);
+    }
+
+    public void insertProduct(Product product) {
+        productDAO.insertProduct(product);
+    }
+
+    public void updateProduct(String productId, Product product) {
+        productDAO.updateProduct(productId, product);
     }
 
     public Product getProduct(String productId) {
-        return this.productMapper.getProduct(productId);
+        return productDAO.getProduct(productId);
+    }
+
+    public void deleteProducts() {
+        productDAO.deleteProducts();
     }
 }

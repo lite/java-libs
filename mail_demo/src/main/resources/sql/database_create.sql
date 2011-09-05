@@ -7,13 +7,13 @@ USE mail_demo;
 DROP TABLE IF EXISTS products;
 
 CREATE TABLE products (
-  id INTEGER NOT NULL PRIMARY KEY auto_increment,
+  product_id INTEGER NOT NULL PRIMARY KEY auto_increment,
   product_id VARCHAR(256) NOT NULL UNIQUE,
   product_name VARCHAR(256) NOT NULL
 );
 
 CREATE TABLE test (
-  id INTEGER NOT NULL PRIMARY KEY auto_increment,
+  product_id INTEGER NOT NULL PRIMARY KEY auto_increment,
   product_id VARCHAR(256) NOT NULL UNIQUE,
   product_name VARCHAR(256) NOT NULL,
   hash VARCHAR(256) NOT NULL UNIQUE,

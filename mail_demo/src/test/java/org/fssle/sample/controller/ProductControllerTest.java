@@ -20,9 +20,9 @@ public class ProductControllerTest {
     }
 
     @Test
-    public void should_return_with_all_products() {
+    public void should_return_default_products() {
         modelMap = new ModelMap();
-        productController.list(modelMap);
+        productController.index(modelMap);
         ProductsPresenter productsPresenter = (ProductsPresenter) modelMap.get("products");
 
         assertThat(productsPresenter, notNullValue());

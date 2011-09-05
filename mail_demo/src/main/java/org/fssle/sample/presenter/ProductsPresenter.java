@@ -1,6 +1,6 @@
 package org.fssle.sample.presenter;
 
-import org.fssle.sample.model.Product;
+import org.fssle.sample.pojo.Product;
 
 import java.util.ArrayList;
 import java.util.Collection;

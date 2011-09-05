@@ -1,5 +1,5 @@
-<#macro shareLink id>
-<a class="share-link" href="#" ajaxUrl="${webRoot}mail-share-${id}">Share with email</a>
+<#macro shareLink product_id>
+<a class="share-link" href="#" ajaxUrl="${webRoot}mail-share-${product_id}">Share with email</a>
 </#macro>
 
 <#macro shareMedia>

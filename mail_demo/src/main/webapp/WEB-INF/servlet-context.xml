@@ -15,7 +15,7 @@
     <!-- @Controller, @Service, @Configuration, etc. -->
     <context:component-scan base-package="org.fssle.sample.controller"/>
 
-    <!-- Enables the Spring MVC @Controller programming model -->
+    <!-- Enables the Spring MVC @Controller programming pojo -->
     <mvc:annotation-driven/>
 
     <bean id="webPropertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
